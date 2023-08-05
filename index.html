@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .bars {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 100vh;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .leftbar {
+      background-color: blue;
+      width: 250px;
+      padding: 0.5rem;
+    }
+    .leftbar .logocontainerthing {
+      background-color: red;
+      width: 35px;
+    }
+    .logocontainerthing svg {
+      fill: white;
+    }
+    .centre {
+      background-color: grey;
+      width: 500px;
+    }
+    .rightbar {
+      background-color: purple;
+      width: 400px;
+    }
+  </style>
+  <body>
+    <div class="bars">
+      <div class="leftbar">
+        <div class="logocontainerthing">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="r-1nao33i r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp"
+          >
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="buttonlist">
+          <div class="link">
+            <h1>Home</h1>
+          </div>
+        </div>
+      </div>
+      <div class="centre"></div>
+      <div class="rightbar"></div>
+    </div>
+  </body>
+</html>

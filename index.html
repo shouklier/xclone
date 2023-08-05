@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Twitter</title>
   </head>
   <style>
     .bars {
@@ -16,33 +16,87 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: black;
+      color: white;
     }
     .leftbar {
-      background-color: blue;
       width: 250px;
       padding: 0.5rem;
+      /* background-color: rgba(255, 255, 255, 0.1); */
+      display: flex;
+      flex-direction: column;
     }
     .leftbar .logocontainerthing {
-      background-color: red;
       width: 35px;
     }
     .logocontainerthing svg {
       fill: white;
     }
     .centre {
-      background-color: grey;
+      /* background-color: rgba(255, 255, 255, 0.3); */
       width: 500px;
     }
     .rightbar {
-      background-color: purple;
+      /* background-color: rgba(255, 255, 255, 0.2); */
       width: 400px;
+    }
+    .buttonlist {
+      margin-top: 1rem;
+    }
+    .buttonlist .link {
+      font-size: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      border-radius: 35px;
+      transition: all 150ms ease-in-out;
+    }
+    .buttonlist .link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .profile {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile p:nth-child(1) {
+      font-weight: 800;
+    }
+    .profile img {
+      width: 70px;
+      border-radius: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+    }
+    .profile img:hover {
+      animation: goofy infinite 1s;
+    }
+
+    @keyframes goofy {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    .profile #at {
+      opacity: 0.6;
     }
   </style>
   <body>
     <div class="bars">
       <div class="leftbar">
         <div class="logocontainerthing">
-          <!-- //abo omak -->
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -57,7 +111,31 @@
         </div>
         <div class="buttonlist">
           <div class="link">
-            <h1>Home</h1>
+            <p>🏠</p>
+            <p>Home</p>
+          </div>
+          <div class="link">
+            <p>🔍</p>
+            <p>Explore</p>
+          </div>
+          <div class="link">
+            <p>🔔</p>
+            <p>Notifications</p>
+          </div>
+          <div class="link">
+            <p>✉️</p>
+            <p>Messages</p>
+          </div>
+          <div class="link">
+            <p>🤶🏿</p>
+            <p>Lists</p>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="./OK.jpeg" />
+          <div class="profiledata">
+            <p>Goofy ahh</p>
+            <p id="at">@omaksa7bety</p>
           </div>
         </div>
       </div>
